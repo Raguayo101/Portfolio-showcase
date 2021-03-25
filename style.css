@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: lightsteelblue;
+}
+
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif
+}
+
+nav{
+    background-color: #739c73;
+}
+
+nav ul {
+    Display:flex; 
+    justify-content: flex-end;
+    font-size: 25px;
+    list-style: none;
+}
+
+nav li {
+    margin: 30px;
+}
+
+header {
+    margin: 5px;
+}
+
+.center-text{
+    text-align: center;
+    font-size: 60px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+}
+
+/*Horizontal Liine */  
+
+.hr{
+    border: 7px solid #739c73;
+    width: 50%;
+    margin: auto;
+    border-radius: 60px;
+
+}
+
+main {
+    
+    margin: 30px;
+}
+
+/*first section on main element*/
+.s1-flex{
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+/*puts header and text next to head other*/
+.split-text {
+    font-size: 60px;
+    flex-basis: 35%;
+    margin-left: 30px;
+}
+
+/*Vertlice line*/
+.vl{
+    border-left: 6px solid #739c73;
+    height: 90px;
+    margin-right: 48px;
+    margin-left: -67px;
+    border-radius: 60px;
+}
+
+
+.center-project-text{
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
