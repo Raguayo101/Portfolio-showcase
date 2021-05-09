@@ -1,100 +1,172 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Drigo's portfolio</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <title>Portfolio</title>
 </head>
 
-<body id="about">
+<body>
 
-    <nav>
-        <ul>
-            <li> <a href = "#about">About me </a> </li>
-            <li> <a href = "#work"> Work </a> </li>
-            <li> <a href = "#contact"> Contact </a> </li>
-        </ul>
+    <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id='burger'>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
+        <div class="navbar-menu " id="nav-links">
+            <div class="navbar-start">
+                <a class="navbar-item has-text-dark has-text-weight-bold" href="#about">About me</a>
+                <a class="navbar-item has-text-dark has-text-weight-bold" href="#contact">Contact</a>
+                <a class="navbar-item has-text-dark has-text-weight-bold" href="#work">Work</a>
+            </div>
+        </div>
     </nav>
 
-    <header>
-            
-        <h1 class = "center-header-text">Hello, I am Rodrigo Aguayo!</h1>
+    <section class="section">
 
-        <p class = "center-paragraph-text">I am an inspiring web developer currently taking courses at UCI in hopes to further grow my skills and become a professional in the field.</p>
+        <div class="container" id="about">
 
-    </header>
+            <!-- about me section -->
+            <div class="columns switch is-flex is-justify-content-space-evenly has-text-white">
+                <div class="column is-two-fifths">
+                    <h1 class="has-text-weight-bold is-size-1">This is Rodrigo Aguayo</h1>
+                    <p class="is-size-4">Aspiring web developer</p>
+                    <!-- horizontal line to spread them out -->
+                    <hr>
+                    <!-- a little bit about me -->
+                    <p>Currently working as a procurement Analyst. Current student at UCI obtaining a cert. in full
+                        stack
+                        development.
+                    </p>
+                    <!-- button for email -->
+                    <button class="button my-2"><a href="mailto: RodrigoAguayo94@gmail.com">Get in touch</a></button>
+                    <!-- icons for links -->
+                    <ul class="social" id="contact">
+                        <li>
+                            <a href="mailto: RodrigoAguayo94@gmail.com" target="_blank">
+                                <i class="fas fa-envelope-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Raguayo101" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rodrigo-aguayo-b4150b192/" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
 
-    <section class = "img-center">
-        
-        <img src = "images/this_photo_is_pre_covid.jpg" alt="photo of me">
-        
+                </div>
+                <!-- profile column -->
+                <div class="column is-two-fifths ">
+                    <img src="images/photo_of_me.jpg" alt="photo of me" class="profile-img">
+                </div>
+
+            </div>
     </section>
 
-    <section class ="nav-pad" id = "work">
-
-        <h2 class ="work-header">Here are some of my projects! </h2>
-
-    </section>
-    
-
-    <section>
-        
-        <a href = "https://placeholder.com" target="_blank"><img class = "width" src="https://via.placeholder.com/300.JPG" alt="placeholder img"></a>
-
-        <p id = "border-large-project-display">Project 1</p>
-
+    <section class="header-size">
+        <div class="message-header is-justify-content-center is-size-4 has-text-dark has-text-weight-bold" id="work">
+            Projects
+        </div>
     </section>
 
-    <main>
+    <Section class="section">
+        <div class="container">
 
-        <section>
-            <a href = "https://placeholder.com" target="_blank"><img class = "width" src="https://via.placeholder.com/450.JPG" alt="placeholder img"></a>
+            <!-- creating columns -->
+            <div class="columns is-centered is-vcentered">
+                <div class="column ">
+                    <!-- for img -->
+                    <div class="card">
 
-            <p class = "border-for-projects">Project 2</p>
+                        <figure class="image is-4by3 m-0">
+                            <img src="./images/Watch_to_watch_homepage.png" alt="image of project">
+                        </figure>
 
-        </section>
+                        <!-- link and desc. of project -->
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <button class="button"
+                                        onclick="location.href='https://raguayo101.github.io/What-to-Watch/';">view
+                                        here</button>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-6">"What to Watch" is a website that generates a random movie
+                                        based off of the users filtered options.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- next project -->
+                <div class="column">
+                    <div class="card">
 
-        <section>
-            <a href = "https://placeholder.com" target="_blank"><img class = "width" src="https://via.placeholder.com/450.JPG" alt="placeholder img"></a>
+                        <figure class="image is-4by3 m-0">
+                            <img src="./images/work_day.png" alt="Placeholder image">
+                        </figure>
 
-            <p class = "border-for-projects">Project 3</p>
+                        <!-- for description of project-->
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <button class="button"
+                                        onclick="location.href='https://raguayo101.github.io/Work-Day-Scheduler/';">view
+                                        here</button>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-6">A Work day scheduler to help you better keep time of your day!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- next project card -->
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3 m-0">
+                                <img src="./images/password.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <!-- for description of project -->
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <button class="button"
+                                        onclick="location.href='https://raguayo101.github.io/Password-Generator/';">view
+                                        here</button>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-6">Generate random password</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
 
-        </section>
 
-        <section>
-            <a href = "https://placeholder.com" target="_blank"><img class = "width" src="https://via.placeholder.com/450.JPG" alt="placeholder img"></a>
-
-            <p class = "border-for-projects">Project 4</p>
-
-        </section>
-        
-
-    </main>
-
-    <section id="contact">
-
-        <h2 class ="work-header">Contact me! </h2>
-
-    </section>
-
-    <footer>
-
-        <section class = "footer-font">
-
-            <a href="mailto:rodrigoaguayo94@gmail.com">Rodrigoaguayo94@gmail.com</a>
-
-        </section>
-
-        <section class = "footer-font">
-            
-            <a href="https://github.com/Raguayo101/Portfolio-showcase" target="_blank">GitHub</a>
-
-        </section>
-
-    </footer>
 
 
 </body>
+<script src="script.js"> </script>
+
 </html>

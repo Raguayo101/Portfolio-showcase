@@ -1,143 +1,124 @@
-body {
-    font-family: 'Camphor','Open Sans','Segoe UI','sans-serif';
-    background-color: #303842;
-    margin-top: 52px;
-    padding-top: 22px;
+.button {
+    border-radius: 12061994px;
 }
 
-* {
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-font-family: 'Camphor','Open Sans','Segoe UI','sans-serif';
-color:whitesmoke;
+.button:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
 }
 
-nav{
-    background-color: #739c73;
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+button:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translateY(-2px);
 }
 
-nav ul {
-    Display:flex; 
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    font-size: 25px;
-    list-style: none;
-}
-
-nav li {
-    margin: 30px;
-}
-
-header {
-    margin: 5px;
-    padding-top: 50px;
-}
-
-.center-header-text{
-    text-align: center;
-    font-size: 60px;
-}
-
-.center-paragraph-text{
-    text-align: center;
-    font-size: 
-}
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    width: 30%;
-}
-
-.work-header{
-    border-bottom: 3px solid #739c73;
-    text-align: center;
+.card{
     max-width: 400px;
-    margin: auto;
-    margin-top: 50px;
+    min-height: 430px;
+    max-height: 430px;
 }
 
-/* Makes img's fit more nicely on page*/
-.width {
-    width: 70%;
-    height: 400px;
-
+.footer {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
-/*Padding to keep nav bar atop of content*/
-.nav-pad{
-    padding-top: 50px;
+.header-size {
+    max-width: 15%;
+}
+
+html {
+    line-height: 1.5;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    color: white;
+}
+
+hr {
+    background-color: #b1bfd8;
+    border: none;
+    content: "";
+    height: 1px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    width: 4rem;
 }
 
 
-/*border for the large display*/
-#border-large-project-display{
-       border: 15px solid #739c73;
-       text-align: center;
-       max-width: 400px;
-       margin: auto;
-       background-color:#739c73;
 
+.profile-img {
+    max-width: 46%;
+    border-radius: 120694px;
 }
 
-main{
-    display:flex; 
-    justify-content: space-evenly;
-    flex-wrap:wrap;
+.navbar {
+    background-color: #b1bfd8;
 }
 
-/*border for the smaller img displays */
-.border-for-projects{
-    border: 15px solid #739c73;
-    text-align: center;
-    max-width: 316px;
-    margin: auto;
-    background-color:#739c73;
+.message-header {
+    background-color: #b1bfd8;
 }
 
-footer {
+/* for social links */
+
+.social {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 50px;
 }
 
-.footer-font{
-    font-size:30px;
-    flex:1 0 50%;
+.social li {
+    height: 2rem;
+    margin-right: 0.5rem;
     text-align: center;
+    width: 2rem;
+}
+
+.social a {
+    color: white;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    width: 2rem;
+    will-change: opacity, transform;
+}
+
+.social a:hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+.social a:active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.wallpaper {
+    background-image: url("images/tunnel.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    position: fixed;
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 
-@media screen and (max-width:950px){
-    section{
-        flex:2 0 100%;
-    
-    }
-    .footer-font{
-        flex:1 0 100%;
-    }
 
+@media screen and (max-width: 750px) {
+    .switch {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    img {
+        max-width: 100%;
+    }
+    .header-size {
+        max-width: 60%;
+    }
 }
-
-@media screen and (max-width:400px){
-    section{
-        flex:2 0 100%;
-    
-    }
-    .footer-font{
-        flex:1 0 100%;
-    }
-
-}
-
-
